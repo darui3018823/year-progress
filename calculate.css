@@ -24,6 +24,7 @@ select {
     height: 30px;
     background-color: #f0f0f0;
     margin-top: 10px;
+    display: none;
 }
 
 .progress-bar {
@@ -37,4 +38,5 @@ select {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
+    display: none;
 }
