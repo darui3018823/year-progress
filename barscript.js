@@ -23,7 +23,7 @@ function calculatePercentage() {
     const totalDays = yearType === 'leap' ? 366 : 365;
     const percentage = ((daysElapsed / totalDays) * 100).toFixed(2);
 
-    document.getElementById('result').textContent = `選択された日にちは ${percentage}%！`;
+    document.getElementById('result').textContent = `選択された日は ${percentage}%！`;
 
     const progressBar = document.getElementById('progress-bar');
     progressBar.style.width = `${percentage}%`;
