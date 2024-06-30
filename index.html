@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日は今年の何%?</title>
+    <link rel="stylesheet" href="calculate.css">
+</head>
+<body>
+    <h1>今日は今年の何%?</h1>
+    <div>
+        <select id="month" onchange="updateDays()">
+            <option selected disabled>何月?</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select id="day">
+            <option selected disabled>何日?</option>
+        </select>
+        <select id="yearType" onchange="updateDays()">
+            <option selected disabled>オプション</option>
+            <option value="leap">今年は閏年</option>
+            <option value="normal">今年は閏年ではない</option>
+        </select>
+    </div>
+    <div class="result" id="result"></div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar" style="width: 0;"></div>
+    </div>
+    <div class="markers">
+        <span>0</span>
+        <span>25</span>
+        <span>50</span>
+        <span>75</span>
+        <span>100</span>
+    </div>
+    <script src="barscript.js"></script>
+</body>
+</html>
